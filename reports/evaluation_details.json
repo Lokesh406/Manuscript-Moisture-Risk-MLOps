@@ -1,0 +1,32 @@
+{
+    "selected_model": "Random Forest",
+    "metrics": [
+        {
+            "Model": "Decision Tree",
+            "Accuracy": 0.9166666666666666,
+            "Precision": 0.9253731343283582,
+            "Recall": 0.9253731343283582,
+            "F1 Score": 0.9253731343283582
+        },
+        {
+            "Model": "Random Forest",
+            "Accuracy": 0.9166666666666666,
+            "Precision": 0.9130434782608695,
+            "Recall": 0.9402985074626866,
+            "F1 Score": 0.9264705882352942
+        }
+    ],
+    "features": [
+        "relative_humidity",
+        "room_temperature",
+        "wall_surface_temperature",
+        "door_openings_per_hour",
+        "ventilation_duration",
+        "dehumidifier_operating_hours",
+        "room_occupancy",
+        "dew_point_temperature",
+        "condensation_risk_index",
+        "ventilation_effectiveness_ratio"
+    ],
+    "target": "moisture_risk"
+}

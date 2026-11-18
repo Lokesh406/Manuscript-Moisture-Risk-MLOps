@@ -1,0 +1,23 @@
+artifact_path: /content/Manuscript_Moisture_Risk_MLOps/Manuscript_Moisture_Risk_MLOps/mlruns/1/models/m-4447d35034ad4c39af22fc3f1d4d2c36/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.18
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+    skops_trusted_types: null
+mlflow_version: 3.18.0
+model_id: m-4447d35034ad4c39af22fc3f1d4d2c36
+model_size_bytes: 626607
+model_uuid: m-4447d35034ad4c39af22fc3f1d4d2c36
+prompts: null
+run_id: 6f98cde3f22b43d6ac8b216f978a0c31
+utc_time_created: '2026-11-18 09:04:07.886637'

@@ -1,0 +1,34 @@
+{
+    "project": "Manuscript Moisture Risk Prediction",
+    "prediction_horizon": "48 hours",
+    "synthetic_data": true,
+    "target": "moisture_risk",
+    "target_rules": [
+        "Future wall temperature within 1.5 C of dew point",
+        "Future relative humidity at least 85 percent with poor environmental control"
+    ],
+    "future_features_excluded_from_model": true,
+    "versions": {
+        "v1": {
+            "records": 300,
+            "description": "Normal storage conditions"
+        },
+        "v2": {
+            "records": 300,
+            "description": "Monsoon conditions with increased humidity and reduced ventilation"
+        }
+    },
+    "columns": [
+        "room_id",
+        "observation_timestamp",
+        "relative_humidity",
+        "room_temperature",
+        "wall_surface_temperature",
+        "door_openings_per_hour",
+        "ventilation_duration",
+        "dehumidifier_operating_hours",
+        "room_occupancy",
+        "moisture_risk"
+    ],
+    "random_seed": 42
+}
